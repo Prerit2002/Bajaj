@@ -43,6 +43,12 @@ router.post('/bfhl', async (req, res) => {
   }
 });
 
+// GET method endpoint
+router.get('/bfhl', (req, res) => {
+  const operationCode = 'YourOperationCodeHere'; // Replace with your actual operation code
+  res.json({ operationCode });
+});
+
 
 
 module.exports = router;

@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+
 const userSchema = new mongoose.Schema({
   userId: { type: String, required: true },
   collegeEmailId: { type: String, required: true },
@@ -7,5 +8,6 @@ const userSchema = new mongoose.Schema({
   numbers: [Number],
   alphabets: [String],
 });
+
 
 module.exports = mongoose.model('User', userSchema);

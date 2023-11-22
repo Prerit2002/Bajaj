@@ -21,9 +21,6 @@ mongoose
   .catch((e) => {
     console.log(e);
   });
-
-
-
   app.use('/api', apiRoutes);
   
   
